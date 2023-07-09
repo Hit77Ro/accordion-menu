@@ -1,0 +1,41 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+li {
+  list-style: none;
+}
+
+.accordion {
+  width: 500px;
+  margin: 100px auto;
+  border-radius: 10px;
+}
+.head {
+  border-bottom: 1px solid #999;
+  padding: 10px;
+  cursor: pointer;
+  background: #eee;
+}
+.body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: 0.4s ease;
+  background-color: #eee;
+}
+.item.active .body {
+  grid-template-rows: 1fr;
+}
+.item.active .head {
+  background: #eee;
+}
+.content {
+  overflow: hidden;
+}
+p {
+  padding: 10px;
+}
