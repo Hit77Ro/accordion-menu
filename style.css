@@ -6,6 +6,9 @@
   box-sizing: border-box;
   line-height: 1.6;
 }
+body { 
+  font-family: 'Courier New', Courier, monospace;
+}
 li {
   list-style: none;
 }
